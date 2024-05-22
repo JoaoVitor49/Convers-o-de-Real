@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Converter Reais</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Convert Money</h1>
+        </header>
+        <main>      
+            <label>Converter <b>de:</b></label>
+            <select>
+                <option>R$ Real brasileiro</option>
+            </select>
+            
+            <label>Coverter <b>para:</b></label>
+            <select id="moeda-select">
+                <option>US$ Dólar americano</option>
+                <option>€ Euro</option>
+            </select>
+        
+        
+            <label for="input-valor"><b>Valor:</b></label>
+            <input name="valor" id="input-valor">       
+            <button id="botao-converter">Converter</button>
+
+            <section>
+                <div class="moeda-container">
+                    <img src="./img/brasil.png">
+                    <p class="moeda-name">Real</p>
+                    <p class="moeda-valor" id="valor-real">R$ 0</p>
+                </div>
+                
+                <img class="img-seta" src="./img/seta.png">
+
+                <div class="moeda-container">
+                    <img id="img-moeda-destino" src="./img/eua.png">
+                    <p class="moeda-name" id="nome-moeda-destino">Dolar Americano</p>
+                    <p class="moeda-valor" id="valor-moeda-destino">US$ 0</p>
+                </div>                
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
